@@ -16,3 +16,42 @@ application/logs/*
 !application/logs/index.html
 !application/logs/.htaccess
 /vendor/
+
+# Originals:
+.DS_Store
+
+application/cache/*
+!application/cache/index.html
+!application/cache/.htaccess
+
+# My Settings:
+my-notes.txt
+
+user_guide/
+
+# Exclude configuration files
+application/config/email.php
+
+# Exclude sensitive data directories
+application/logs/
+application/cache/
+application/uploads/
+
+# Ignore the entire folder "config":
+application/config/
+
+# Unignore specific files:
+!application/config/autoload.php
+!application/config/config.php
+!application/config/database.php
+
+# Exclude environment files
+.env
+
+*.tmp
+*.swp
+*.bak
+
+
+# Ignore system directory
+/system/

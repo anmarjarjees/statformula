@@ -1,0 +1,506 @@
+﻿/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* Color Scheme:
+   - Darker: #AD8F38
+   - Lighter: #967208
+   - Accent: #F2C84E
+   - Background: #FAEBC1
+   - Text (lighter): #FDF8E8
+   - Text (less lighter): #F2D379
+*/
+
+/* Reset CSS Rules */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/******************************************* End of Reset CSS Rules ************************************************/
+
+/********************************************* Mobile First ************************************************/
+.outline {
+  /* Hides elements visually but keeps them accessible */
+  position: absolute;
+  text-indent: -99999px;
+}
+
+body {
+  color: #04134d;
+  line-height: 1.5em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  background-color: #e0e0e0;
+  background: #FAEBC1 url('../images/pattern.png');
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+}
+
+h1 {
+  font-size: 1.3em;
+  margin: 0 0 .5em 0;
+}
+
+h2 {
+  font-size: 1.2em;
+  margin: 0 0 1em 0;
+}
+
+h3 {
+  font-size: 1.1em;
+  margin: 0 0 1em 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  margin: .2em;
+  color: #5B4D01;
+}
+
+section#mainContent h1,
+section#mainContent h2,
+section#mainContent h3 {
+  white-space: nowrap;
+  width: 62%;
+  margin-bottom: .5em;
+}
+
+p {
+  margin: .75em;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: saddlebrown;
+  text-decoration: underline;
+}
+
+section#mainContent a:link {
+  color: brown;
+}
+
+section#mainContent a:visited {
+  color: #CC9900;
+}
+
+a:active {
+  color: #3366CC;
+}
+
+.errorMsg {
+  background-color: #3E1F00;
+  color: #FFFFCC;
+  width: 90%;
+  margin: .5em auto;
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* Container for centralizing content */
+div#container,
+footer {
+  margin: auto;
+  position: relative;
+  max-width: 64em;
+  /* 1100px / 16px */
+}
+
+/* Horizontal rule */
+hr {
+  width: 90%;
+  color: beige;
+}
+
+header#pageHeader {
+  width: 100%;
+  margin: 0;
+}
+
+header#pageHeader img {
+  margin: 0;
+}
+
+/* Global border styles */
+.formDiv form,
+nav#mainNav,
+aside#sidebar,
+section#mainContent,
+#login,
+#signup,
+#signupBox,
+#loginBox,
+legend,
+header#pageHeader,
+table,
+tr,
+td,
+#signupBox h2,
+#loginBox h2,
+footer,
+.accordion,
+.accordion li,
+div.titleBox {
+  border-radius: 7px;
+  border: 1px solid burlywood;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+nav#mainNav,
+aside#sidebar,
+section#mainContent,
+#signupBox h2,
+#loginBox h2,
+footer#pageFooter {
+  background-color: #207168;
+  background: #967208 url(../images/pattern.png) top left repeat;
+}
+
+.titleBox {
+  background-color: #F2D379;
+  color: #9A6002;
+  text-align: center;
+  width: 90%;
+  margin: .5em auto;
+}
+
+/* Main Navigation Styles */
+nav#mainNav {
+  width: 100%;
+  margin: .4em auto;
+  overflow: hidden;
+}
+
+nav#mainNav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 1.1em;
+  line-height: 2em;
+  font-family: Helvetica;
+  font-weight: bold;
+}
+
+nav#mainNav li {
+  display: block;
+  word-break: keep-all;
+  /* Prevent text wrapping */
+}
+
+nav#mainNav a,
+nav#mainNav a:link,
+nav#mainNav a:visited {
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #FDF8E8;
+  padding: 0 1em;
+  border: 2px beige groove;
+}
+
+nav#mainNav a:hover {
+  color: beige;
+  background: #5B2E00 url(../images/pattern.png) top left repeat;
+}
+
+/* Main Content and Sidebar Styles */
+section#mainContent {
+  margin: .4% .1% .4% .4%;
+  background-color: #FDF8E8;
+}
+
+aside#sidebar {
+  display: block;
+  width: 100%;
+  /* 30% */
+  margin: .4% .4% .4% .1%;
+}
+
+.clearBoth {
+  clear: both;
+}
+
+table {
+  width: 90%;
+  margin: .5em auto;
+}
+
+table,
+th,
+td {
+  border: 1px solid silver;
+}
+
+table th,
+table td {
+  padding: .2em;
+}
+
+table th {
+  background-color: #F2D379;
+  color: #5C4D02;
+  font-weight: bold;
+  width: 35%;
+}
+
+/* Footer Styles */
+footer#pageFooter {
+  overflow: auto;
+  /* Prevent footer collapse if content is floating */
+  clear: both;
+  color: #ffffff;
+  text-align: center;
+}
+
+footer#pageFooter a:link {
+  color: beige;
+  font-weight: bold;
+}
+
+footer#pageFooter a:visited {
+  color: #FFCC00;
+}
+
+ul.bulletList {
+  list-style: disc;
+  margin-left: 3em;
+}
+
+#pageFooter ul li {
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+/* Image Styles */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.imgLeft {
+  float: left;
+  margin-right: 1em;
+  /* 8px */
+}
+
+.imgRight {
+  float: right;
+  margin-left: 1em;
+  /* 8px */
+}
+
+/* Form Styles */
+.formDiv form {
+  background-color: #ffffd1;
+  width: 90%;
+  margin: .5em auto 1em auto;
+  padding: 8px;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+.formDiv label {
+  margin: .5em 0 0 0;
+  display: block;
+}
+
+.formDiv fieldset {
+  border: 1px brown ridge;
+  padding: 1em;
+  margin: .1em auto 1em auto;
+}
+
+.formDiv legend {
+  padding: 0 .3em;
+  margin: 0;
+}
+
+.formDiv input,
+.formDiv textarea {
+  width: 98%;
+  margin: auto;
+}
+
+/* Signup and Login Box Styles */
+#signupBox h2,
+#loginBox h2 {
+  text-align: center;
+  margin: .2em;
+  padding: .2em;
+  color: #FDF8E8;
+}
+
+#login,
+#signup {
+  background-color: #F2D379;
+  width: 88%;
+  margin: .35em auto;
+  padding: .5em;
+}
+
+#signupBox,
+#loginBox {
+  margin: 0 auto;
+}
+
+/* Miscellaneous Styles */
+.abbreviations {
+  font-size: 0.8em;
+  font-style: italic;
+}
+
+.instruction {
+  font-style: italic;
+  font-weight: bold;
+}
+
+footer,
+.formDiv {
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1em;
+}
+
+/* Utility Classes */
+.hidden {
+  display: none;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
